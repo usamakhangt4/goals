@@ -1,0 +1,48 @@
+.header {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $primary_color;
+  z-index: 1;
+
+  .logo {
+    font-size: 32px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .ant-menu {
+    &.menu {
+      background-color: $primary_color;
+      border: none;
+
+      .ant-menu-item {
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        &.ant-menu-item-selected {
+          background-color: $primary_dark_color;
+        }
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:visited {
+          color: $primary_color;
+          background-color: white;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}

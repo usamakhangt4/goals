@@ -1,0 +1,48 @@
+@import "~antd/dist/antd.css";
+@import "./Home.scss";
+@import "./components/Navbar.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+// out of dom elements styling
+
+.ant-menu.ant-menu-dark,
+.ant-menu-dark .ant-menu-sub,
+.ant-menu.ant-menu-dark .ant-menu-sub {
+  background-color: $primary_color;
+
+  .ant-menu-item {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &.ant-menu-item-selected {
+      background-color: $primary_dark_color;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: $primary_color;
+      background-color: white;
+    }
+  }
+}
