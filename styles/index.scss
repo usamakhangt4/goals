@@ -1,6 +1,9 @@
 @import "~antd/dist/antd.css";
 @import "./Home.scss";
 @import "./components/Navbar.scss";
+@import "./components/Math.scss";
+
+@import "./reuseableComponents/Dice.scss";
 
 html,
 body {
